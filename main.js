@@ -121,27 +121,47 @@
 
 //שאלה 17
 
-function getNumberPrintObjact(){
-var numberofprint=0;
-var numshoop=prompt();
-for(var i=0;i<numshoop;i++){
-var shop={
-    name:prompt("inter name"),
-    street:prompt("inter street"),
-    secshennum:prompt("inter shcshen"),
-    inpluynum:prompt("inter impluy")
-}
-if(shop.inpluynum>10){
-    numberofprint++;
-    document.body.innerHTML+="<h1>"+shop.name+"</h1>"+" "+"<h2>"+shop.street+"</h2>"+" "+"<h3>"+shop.secshennum+"</h3>"+" "+"<h4>"+shop.inpluynum+"</h4>"+"<br/>"
-}
-}
-return numberofprint;
-}
-getNumberPrintObjact()
+// function getNumberPrintObjact(){
+// var numberofprint=0;
+// var numshoop=prompt();
+// for(var i=0;i<numshoop;i++){
+// var shop={
+//     name:prompt("inter name"),
+//     street:prompt("inter street"),
+//     secshennum:prompt("inter shcshen"),
+//     inpluynum:prompt("inter impluy")
+// }
+// if(shop.inpluynum>10){
+//     numberofprint++;
+//     document.body.innerHTML+="<h1>"+shop.name+"</h1>"+" "+"<h2>"+shop.street+"</h2>"+" "+"<h3>"+shop.secshennum+"</h3>"+" "+"<h4>"+shop.inpluynum+"</h4>"+"<br/>"
+// }
+// }
+// return numberofprint;
+// }
+// getNumberPrintObjact()
 
-function printed(conect){
-    document.write(conect);
-}
-printed(getNumberPrintObjact())
+//שאלה 18
 
+// function printed(conect){
+//     document.write(conect);
+// }
+// printed(getNumberPrintObjact())
+
+//שאלה 19
+
+function getObject(){
+    var contactNum=prompt();
+    for(var j=0;j<contactNum;j++){
+    var contact={
+        fullName:prompt("inter full name"),
+        company:prompt("inter company"),
+        phoneNumber:prompt("inter phon number"),
+        MobilePhoneNumber:prompt("inter mobile"),
+        email:prompt("inter email")
+
+    }
+    contactList.innerHTML+="<li>"+contact.fullName+"</li>";
+    var contactList =document.getElementById("sumlist");
+}
+}
+getObject()
